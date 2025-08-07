@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Dean | Tech Policy Expert</title>
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">Andrea Dean</h1>
+            <a href="#" class="logo">Andrea Dean</a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -26,7 +26,7 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Tech Policy & Engineering</h1>
+                <h1 class="hero-title">Tech Policy & Engineering</h1>
                 <p class="subtitle">Bridging technology, law, and ethics</p>
             </div>
         </section>
@@ -35,13 +35,15 @@
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
+                     <div class="about-image-wrapper">
+                        <div class="about-image">
+                           <img src="/profile.JPG" alt="A professional headshot of Andrea Dean.">
+                        </div>
+                    </div>
                     <div class="about-text">
                         <p>I'm a technologist and researcher with a background spanning software engineering, AI/ML, and tech policy. Over the past several years, I've led engineering teams and worked on complex systems involving sensor fusion, computer vision, edge computing, video processing, and privacy-aware infrastructure.</p>
                         <p>Alongside my technical work, I completed a <a href="https://curriculum.law.georgetown.edu/llm/llm-programs-non-lawyers/masters-law-technology/" target="_blank">graduate degree focused on law and technology</a>, which deepened my understanding of the legal, ethical, and societal implications of emerging technologies. My interests span AI governance, digital rights, platform accountability, labor, and the broader impact of automation and data systems on people and institutions.</p>
                         <p>I enjoy translating between technical and non-technical audiences, and bring both strategic insight and hands-on experience to projects across sectors.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="/profile.JPG" alt="Andrea Dean">
                     </div>
                 </div>
             </div>
@@ -50,35 +52,56 @@
         <section id="publications" class="publications section">
             <div class="container">
                 <h2 class="section-title">Publications</h2>
-                <div class="publication-category">
-                    <h3>Tech & Law / Policy</h3>
-                    <div class="publication">
-                        <h4><a href="https://afp.oxford-aiethics.ox.ac.uk/sitefiles/complytoflyreport-ajl.pdf" target="_blank">Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</a></h4>
-                        <p>The Comply To Fly? report by the Algorithmic Justice League focuses on the facial recognition program operated by the Transportation Security Administration (TSA) at U.S. airports. While originally described as a “pilot” or “proofs of concept” by TSA, the program has steadily expanded to over 250 airports as of May 2025. This report draws upon hundreds of travelers’ lived experiences, through AJL’s Freedom Flyers Campaign which collects reports of traveler experiences. The report provides background information on the TSA's use of facial recognition, shares findings from travelers' reports regarding program transparency, how travelers experienced consent, and how they were treated, and concludes with recommendations based on these findings.</p>
-                        <p class="citation">Joy Buolamwini, Sushma Raman, and Andrea Dean, <em>Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</em>,  Algorithmic Justice League (2025).</p>
-                    </div>
-                    <div class="publication">
-                        <h4><a href="https://georgetownlawtechreview.org/deploying-software-a-technology-explainer-and-a-look-toward-the-future/GLTR-05-2025/" target="_blank">Deploying Software: A Technology Explainer and a Look Toward the Future</a></h4>
-                        <p>This article seeks to demystify software deployment for legal professionals. First, it explores what deployment entails and where it occurs—from corporate-controlled cloud servers to edge devices like smartphones. Next, it examines who orchestrates deployment, from DevOps engineers to automated pipelines. Third, it maps the technical lifecycle of deployment, from testing to maintenance. Finally, it briefly explores a future where agentic AI—autonomous systems that write, test, and deploy code—reshapes accountability, liability, and control.</p>
-                        <p class="citation">Andrea Dean, <em>Deploying Software: A Technology Explainer and a Look Toward the Future</em>, 9 Geo. L. Tech. Rev. 667 (2025).</p>
-                    </div>
-                    <div class="publication">
-                        <h4>Tech Labor Rights for Human Rights</h4>
-                        <p>Tech workers' code can empower human‑rights abuses, yet U.S. law barely shields them when they organize to stop it. From IBM's WWII punch‑cards to today's Project Nimbus protests, this paper shows how tech blurs the line between "workplace" and "political" action, leaving gaps in labor and whistleblower protections. It maps strategies for organizing under current law and calls for reforms so tech workers can collectively challenge harmful uses of their labor.</p>
-                        <p class="citation">Andrea Dean, <em>Tech Labor Rights for Human Rights</em>, NYCU Law Review __ (forthcoming 2025; contact author for preprint).</p>
-                    </div>
-                    <div class="publication">
-                        <h4>Performance-Based AI Governance: Concept, Critiques, and Alternatives</h4>
-                        <p>This Paper critiques a regulatory trend that evaluates AI systems primarily through technical metrics like accuracy or robustness, rather than their broader societal purpose or legitimacy. It argues that this approach can obscure key policy questions, rely on unstable benchmarks, and shift regulatory power toward industry. Drawing on case studies, the Paper explores the limitations of this model and proposes alternative approaches grounded in durable social values and design frameworks.</p>
-                        <p class="citation">(Forthcoming, contact author for preprint. Made possible through the Kapor Foundation).</p>
-                    </div>
-                </div>
-                <div class="publication-category">
-                    <h3>For Fun</h3>
-                    <div class="publication">
-                        <h4>Interdependencia | Interdependence</h4>
-                        <p class="citation">Andrea Dean, <em>Interdependencia | Interdependence</em>, in Natural Areas Explorer 2023, at 32–33 (City of Fort Collins 2023), <a href="https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf" target="_blank">https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf</a>.</p>
-                    </div>
+                <div class="publication-list">
+                    <article class="publication">
+                        <div class="publication-header">
+                            <h4><a href="https://afp.oxford-aiethics.ox.ac.uk/sitefiles/complytoflyreport-ajl.pdf" target="_blank">Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</a></h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>The Comply To Fly? report by the Algorithmic Justice League focuses on the facial recognition program operated by the Transportation Security Administration (TSA) at U.S. airports. While originally described as a “pilot” or “proofs of concept” by TSA, the program has steadily expanded to over 250 airports as of May 2025. This report draws upon hundreds of travelers’ lived experiences, through AJL’s Freedom Flyers Campaign which collects reports of traveler experiences. The report provides background information on the TSA's use of facial recognition, shares findings from travelers' reports regarding program transparency, how travelers experienced consent, and how they were treated, and concludes with recommendations based on these findings.</p>
+                            <p class="citation">Joy Buolamwini, Sushma Raman, and Andrea Dean, <em>Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</em>, Algorithmic Justice League (2025).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                        <div class="publication-header">
+                            <h4><a href="https://georgetownlawtechreview.org/deploying-software-a-technology-explainer-and-a-look-toward-the-future/GLTR-05-2025/" target="_blank">Deploying Software: A Technology Explainer and a Look Toward the Future</a></h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                             <p>This article seeks to demystify software deployment for legal professionals. First, it explores what deployment entails and where it occurs—from corporate-controlled cloud servers to edge devices like smartphones. Next, it examines who orchestrates deployment, from DevOps engineers to automated pipelines. Third, it maps the technical lifecycle of deployment, from testing to maintenance. Finally, it briefly explores a future where agentic AI—autonomous systems that write, test, and deploy code—reshapes accountability, liability, and control.</p>
+                            <p class="citation">Andrea Dean, <em>Deploying Software: A Technology Explainer and a Look Toward the Future</em>, 9 Geo. L. Tech. Rev. 667 (2025).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                         <div class="publication-header">
+                            <h4>Tech Labor Rights for Human Rights</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>Tech workers' code can empower human‑rights abuses, yet U.S. law barely shields them when they organize to stop it. From IBM's WWII punch‑cards to today's Project Nimbus protests, this paper shows how tech blurs the line between "workplace" and "political" action, leaving gaps in labor and whistleblower protections. It maps strategies for organizing under current law and calls for reforms so tech workers can collectively challenge harmful uses of their labor.</p>
+                            <p class="citation">Andrea Dean, <em>Tech Labor Rights for Human Rights</em>, NYCU Law Review __ (forthcoming 2025; contact author for preprint).</p>
+                        </div>
+                    </article>
+                     <article class="publication">
+                         <div class="publication-header">
+                            <h4>Performance-Based AI Governance: Concept, Critiques, and Alternatives</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>This Paper critiques a regulatory trend that evaluates AI systems primarily through technical metrics like accuracy or robustness, rather than their broader societal purpose or legitimacy. It argues that this approach can obscure key policy questions, rely on unstable benchmarks, and shift regulatory power toward industry. Drawing on case studies, the Paper explores the limitations of this model and proposes alternative approaches grounded in durable social values and design frameworks.</p>
+                            <p class="citation">(Forthcoming, contact author for preprint. Made possible through the Kapor Foundation).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                        <div class="publication-header">
+                            <h4>Interdependencia | Interdependence</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p class="citation">Andrea Dean, <em>Interdependencia | Interdependence</em>, in Natural Areas Explorer 2023, at 32–33 (City of Fort Collins 2023), <a href="https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf" target="_blank">https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf</a>.</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -86,29 +109,21 @@
         <section id="contact" class="contact section">
             <div class="container">
                 <h2 class="section-title">Get in Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <p>For speaking engagements, consulting inquiries, or to discuss my research, please reach out:</p>
-                        <ul class="contact-links">
-                            <li><a href="mailto:contact@andreaism.com">email me: contact@andreaism.com</a></li>
-                            <li><a href="https://linkedin.com/in/andrearosedean" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://github.com/andreadean" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <p class="contact-intro">For speaking engagements, consulting inquiries, or to discuss my research, please reach out.</p>
+                <a href="mailto:contact@andreaism.com" class="btn">Email Me</a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-links">
+                 <a href="https://linkedin.com/in/andrearosedean" target="_blank">LinkedIn</a>
+                 <a href="https://github.com/andreadean" target="_blank">GitHub</a>
+            </div>
             <p>&copy; 2025 Andrea Dean. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
