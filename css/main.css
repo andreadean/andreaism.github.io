@@ -1,442 +1,130 @@
-:root {
-    /* New color palette */
-    --primary-color: #1a365d; /* Deep blue */
-    --secondary-color: #4f46e5; /* Vibrant purple-blue */
-    --accent-color: #f59e0b; /* Warm accent */
-    --light-color: #f8fafc; /* Very light gray */
-    --dark-color: #1e293b; /* Dark slate */
-    --text-color: #334155; /* Soft dark gray */
-    --text-light: #64748b; /* Medium gray */
-    
-    /* Fonts */
-    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-heading: 'Lora', Georgia, serif;
-    
-    /* Spacing */
-    --max-width: 1100px;
-    --spacing: 2rem;
-    --border-radius: 8px;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --transition: all 0.3s ease;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Dean | Tech Policy Expert</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Andrea Dean</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-/* Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Tech Policy & Engineering</h1>
+                <p class="subtitle">Bridging technology, law, and ethics</p>
+            </div>
+        </section>
 
-html {
-    scroll-behavior: smooth;
-}
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                     <div class="about-image-wrapper">
+                        <div class="about-image">
+                           <img src="/profile.JPG" alt="A professional headshot of Andrea Dean.">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I'm a technologist and researcher with a background spanning software engineering, AI/ML, and tech policy. Over the past several years, I've led engineering teams and worked on complex systems involving sensor fusion, computer vision, edge computing, video processing, and privacy-aware infrastructure.</p>
+                        <p>Alongside my technical work, I completed a <a href="https://curriculum.law.georgetown.edu/llm/llm-programs-non-lawyers/masters-law-technology/" target="_blank">graduate degree focused on law and technology</a>, which deepened my understanding of the legal, ethical, and societal implications of emerging technologies. My interests span AI governance, digital rights, platform accountability, labor, and the broader impact of automation and data systems on people and institutions.</p>
+                        <p>I enjoy translating between technical and non-technical audiences, and bring both strategic insight and hands-on experience to projects across sectors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-body {
-    font-family: var(--font-main);
-    line-height: 1.7;
-    color: var(--text-color);
-    background-color: var(--light-color);
-    -webkit-font-smoothing: antialiased;
-}
+        <section id="publications" class="publications section">
+            <div class="container">
+                <h2 class="section-title">Publications</h2>
+                <div class="publication-list">
+                    <article class="publication">
+                        <div class="publication-header">
+                            <h4><a href="https://afp.oxford-aiethics.ox.ac.uk/sitefiles/complytoflyreport-ajl.pdf" target="_blank">Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</a></h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>The Comply To Fly? report by the Algorithmic Justice League focuses on the facial recognition program operated by the Transportation Security Administration (TSA) at U.S. airports. While originally described as a “pilot” or “proofs of concept” by TSA, the program has steadily expanded to over 250 airports as of May 2025. This report draws upon hundreds of travelers’ lived experiences, through AJL’s Freedom Flyers Campaign which collects reports of traveler experiences. The report provides background information on the TSA's use of facial recognition, shares findings from travelers' reports regarding program transparency, how travelers experienced consent, and how they were treated, and concludes with recommendations based on these findings.</p>
+                            <p class="citation">Joy Buolamwini, Sushma Raman, and Andrea Dean, <em>Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</em>, Algorithmic Justice League (2025).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                        <div class="publication-header">
+                            <h4><a href="https://georgetownlawtechreview.org/deploying-software-a-technology-explainer-and-a-look-toward-the-future/GLTR-05-2025/" target="_blank">Deploying Software: A Technology Explainer and a Look Toward the Future</a></h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                             <p>This article seeks to demystify software deployment for legal professionals. First, it explores what deployment entails and where it occurs—from corporate-controlled cloud servers to edge devices like smartphones. Next, it examines who orchestrates deployment, from DevOps engineers to automated pipelines. Third, it maps the technical lifecycle of deployment, from testing to maintenance. Finally, it briefly explores a future where agentic AI—autonomous systems that write, test, and deploy code—reshapes accountability, liability, and control.</p>
+                            <p class="citation">Andrea Dean, <em>Deploying Software: A Technology Explainer and a Look Toward the Future</em>, 9 Geo. L. Tech. Rev. 667 (2025).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                         <div class="publication-header">
+                            <h4>Tech Labor Rights for Human Rights</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>Tech workers' code can empower human‑rights abuses, yet U.S. law barely shields them when they organize to stop it. From IBM's WWII punch‑cards to today's Project Nimbus protests, this paper shows how tech blurs the line between "workplace" and "political" action, leaving gaps in labor and whistleblower protections. It maps strategies for organizing under current law and calls for reforms so tech workers can collectively challenge harmful uses of their labor.</p>
+                            <p class="citation">Andrea Dean, <em>Tech Labor Rights for Human Rights</em>, NYCU Law Review __ (forthcoming 2025; contact author for preprint).</p>
+                        </div>
+                    </article>
+                     <article class="publication">
+                         <div class="publication-header">
+                            <h4>Performance-Based AI Governance: Concept, Critiques, and Alternatives</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>This Paper critiques a regulatory trend that evaluates AI systems primarily through technical metrics like accuracy or robustness, rather than their broader societal purpose or legitimacy. It argues that this approach can obscure key policy questions, rely on unstable benchmarks, and shift regulatory power toward industry. Drawing on case studies, the Paper explores the limitations of this model and proposes alternative approaches grounded in durable social values and design frameworks.</p>
+                            <p class="citation">(Forthcoming, contact author for preprint. Made possible through the Kapor Foundation).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                        <div class="publication-header">
+                            <h4>Interdependencia | Interdependence</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p class="citation">Andrea Dean, <em>Interdependencia | Interdependence</em>, in Natural Areas Explorer 2023, at 32–33 (City of Fort Collins 2023), <a href="https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf" target="_blank">https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf</a>.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-h1, h2, h3, h4 {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    line-height: 1.3;
-    color: var(--dark-color);
-}
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-intro">For speaking engagements, consulting inquiries, or to discuss my research, please reach out.</p>
+                <a href="mailto:contact@andreaism.com" class="btn">Email Me</a>
+            </div>
+        </section>
+    </main>
 
-a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: var(--transition);
-}
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                 <a href="https://linkedin.com/in/andrearosedean" target="_blank">LinkedIn</a>
+                 <a href="https://github.com/andreadean" target="_blank">GitHub</a>
+            </div>
+            <p>&copy; 2025 Andrea Dean. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
 
-a:hover {
-    color: var(--primary-color);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Layout */
-.container {
-    width: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--spacing);
-}
-
-.section {
-    padding: 5rem 0;
-}
-
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    position: relative;
-    padding-bottom: 1rem;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
-}
-
-/* Header */
-.header {
-    background-color: white;
-    box-shadow: var(--shadow);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    transition: var(--transition);
-}
-
-.header.scrolled {
-    padding: 0.5rem 0;
-}
-
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem var(--spacing);
-}
-
-.logo {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--primary-color);
-}
-
-.main-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.main-nav a {
-    font-weight: 600;
-    color: var(--dark-color);
-    padding: 0.5rem 0;
-    position: relative;
-}
-
-.main-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--secondary-color);
-    transition: var(--transition);
-}
-
-.main-nav a:hover::after {
-    width: 100%;
-}
-
-/* Hero */
-.hero {
-    background: linear-gradient(135deg, var(--primary-color), #2c5282);
-    color: white;
-    padding: 12rem 0 6rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('images/hero-pattern.png') center/cover;
-    opacity: 0.05;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-    color: white;
-    position: relative;
-}
-
-.hero .subtitle {
-    font-size: 1.5rem;
-    opacity: 0.9;
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-}
-
-/* About */
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.about-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-}
-
-.about-image {
-    position: relative;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}
-
-.about-image img {
-    display: block;
-    transition: var(--transition);
-}
-
-.about-image:hover img {
-    transform: scale(1.03);
-}
-
-/* Publications */
-.publication-category {
-    margin-bottom: 4rem;
-}
-
-.publication-category h3 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: var(--primary-color);
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--light-color);
-}
-
-.publication {
-    background-color: white;
-    padding: 2.5rem;
-    margin-bottom: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    border-left: 4px solid var(--secondary-color);
-}
-
-.publication:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-}
-
-.publication h4 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    color: var(--secondary-color);
-}
-
-.publication h4 a {
-    color: inherit;
-}
-
-.publication p {
-    margin-bottom: 1.25rem;
-    font-size: 1.05rem;
-}
-
-.citation {
-    font-style: italic;
-    color: var(--text-light);
-    font-size: 0.95rem;
-    border-top: 1px dashed #e2e8f0;
-    padding-top: 1rem;
-    margin-top: 1.5rem;
-}
-
-/* Contact */
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.contact-info p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-.contact-links li {
-    margin-bottom: 1rem;
-}
-
-.contact-links a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: 500;
-}
-
-.form-group {
-    margin-bottom: 1.75rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-    color: var(--dark-color);
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #e2e8f0;
-    border-radius: var(--border-radius);
-    font-family: var(--font-main);
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
-}
-
-.form-group textarea {
-    min-height: 180px;
-    resize: vertical;
-}
-
-.btn {
-    background-color: var(--secondary-color);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    display: inline-block;
-}
-
-.btn:hover {
-    background-color: #4338ca;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-.footer {
-    background-color: var(--dark-color);
-    color: white;
-    padding: 3rem 0;
-    text-align: center;
-}
-
-.footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer p {
-    margin-bottom: 1.5rem;
-    opacity: 0.9;
-}
-
-.footer-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.footer-links a {
-    color: white;
-    opacity: 0.8;
-}
-
-.footer-links a:hover {
-    opacity: 1;
-    text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .about-content,
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
-    .about-image {
-        order: -1;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    :root {
-        --spacing: 1.5rem;
-    }
-    
-    .hero {
-        padding: 8rem 0 4rem;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero .subtitle {
-        font-size: 1.25rem;
-    }
-    
-    .section {
-        padding: 3.5rem 0;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .header .container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .main-nav ul {
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    .publication {
-        padding: 1.75rem;
-    }
-    
-    .btn {
-        width: 100%;
-    }
-}
