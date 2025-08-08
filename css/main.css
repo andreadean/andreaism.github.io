@@ -122,6 +122,12 @@ img { max-width: 100%; height: auto; display: block; }
     main { padding-top: 80px; }
 }
 
+/* Header links hover effect */
+.main-nav a {
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
 /* Shared link hover style for nav, publications, and footer */
 .main-nav a:hover,
 .publication-header a:hover,
