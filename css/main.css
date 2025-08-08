@@ -121,3 +121,11 @@ img { max-width: 100%; height: auto; display: block; }
     .about-image-wrapper { max-width: 350px; margin: 0 auto 3rem; }
     main { padding-top: 80px; }
 }
+
+/* Shared link hover style for nav, publications, and footer */
+.main-nav a:hover,
+.publication-header a:hover,
+.footer-links a:hover {
+    color: #c05746;
+    text-decoration: underline;
+}
