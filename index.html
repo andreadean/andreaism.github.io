@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Dean | Tech Policy Expert</title>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=1.0.3" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -17,6 +17,7 @@
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#publications">Publications</a></li>
+                    <li><a href="#press">On the Web</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -26,8 +27,10 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Tech Policy & Engineering</h1>
-                <p class="subtitle">Bridging technology, law, and ethics</p>
+                <div id="greeting-title">
+                    <h1 class="hero-title"><span id="greeting-en">Heyy, I'm Andrea</span><span id="greeting-es">Hola, I'm Andrea</span></h1>
+                </div>
+                <p class="hero-tagline">Engineering. Tech Law & Policy.</p>
             </div>
         </section>
 
@@ -42,7 +45,7 @@
                     </div>
                     <div class="about-text">
                         <p>I'm a technologist and researcher with a background spanning software engineering, AI/ML, and tech policy. Over the past several years, I've led engineering teams and worked on complex systems involving sensor fusion, computer vision, edge computing, video processing, and privacy-aware infrastructure.</p>
-                        <p>Alongside my technical work, I completed a <a href="https://curriculum.law.georgetown.edu/llm/llm-programs-non-lawyers/masters-law-technology/" target="_blank">graduate degree focused on law and technology</a>, which deepened my understanding of the legal, ethical, and societal implications of emerging technologies. My interests span AI governance, digital rights, platform accountability, labor, and the broader impact of automation and data systems on people and institutions.</p>
+                        <p>Alongside my technical work, I completed a <a href="https://curriculum.law.georgetown.edu/llm/llm-programs-non-lawyers/masters-law-technology/" target="_blank" rel="noopener noreferrer">graduate degree focused on law and technology <span class="external-link-icon">↗</span></a>, which deepened my understanding of the legal, ethical, and societal implications of emerging technologies. My interests span AI governance, digital rights, platform accountability, labor, and the broader impact of automation and data systems on people and institutions.</p>
                         <p>I enjoy translating between technical and non-technical audiences, and bring both strategic insight and hands-on experience to projects across sectors.</p>
                     </div>
                 </div>
@@ -54,8 +57,18 @@
                 <h2 class="section-title">Publications</h2>
                 <div class="publication-list">
                     <article class="publication">
-                        <div class="publication-header">
-                            <h4><a href="https://afp.oxford-aiethics.ox.ac.uk/sitefiles/complytoflyreport-ajl.pdf" target="_blank" style="text-decoration: underline;">Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment</a></h4>
+                        <div class="publication-header" role="button" tabindex="0" aria-expanded="false">
+                            <h4><a href="https://kgi.georgetown.edu/research-and-commentary/bringing-better-feeds-to-life/" target="_blank" rel="noopener noreferrer">Bringing Better Feeds to Life <span class="external-link-icon">↗</span></a></h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="publication-abstract">
+                            <p>Algorithms determine what we read, watch, and encounter online, and, increasingly, they also influence our offline lives. Yet algorithms are often built to maximize short-term engagement and capture attention, rather than to deliver long-term value to users. KGI’s new commentary takes a deep dive into the evolving landscape of recommender system design, highlighting six innovative trends that show it is possible to design better feeds that put people first.</p>
+                            <p class="citation">Andrea Dean, <em>Bringing Better Feeds to Life</em>, Knight Georgetown Institute (2025).</p>
+                        </div>
+                    </article>
+                    <article class="publication">
+                        <div class="publication-header" role="button" tabindex="0" aria-expanded="false">
+                            <h4><a href="https://afp.oxford-aiethics.ox.ac.uk/sitefiles/complytoflyreport-ajl.pdf" target="_blank" rel="noopener noreferrer">Comply to Fly?: How Airport Travelers Experience TSA’s Facial Recognition Experiment <span class="external-link-icon">↗</span></a></h4>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="publication-abstract">
@@ -64,8 +77,8 @@
                         </div>
                     </article>
                     <article class="publication">
-                        <div class="publication-header">
-                            <h4><a href="https://georgetownlawtechreview.org/deploying-software-a-technology-explainer-and-a-look-toward-the-future/GLTR-05-2025/" target="_blank" style="text-decoration: underline;">Deploying Software: A Technology Explainer and a Look Toward the Future</a></h4>
+                        <div class="publication-header" role="button" tabindex="0" aria-expanded="false">
+                            <h4><a href="https://georgetownlawtechreview.org/deploying-software-a-technology-explainer-and-a-look-toward-the-future/GLTR-05-2025/" target="_blank" rel="noopener noreferrer">Deploying Software: A Technology Explainer and a Look Toward the Future <span class="external-link-icon">↗</span></a></h4>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="publication-abstract">
@@ -74,8 +87,8 @@
                         </div>
                     </article>
                     <article class="publication">
-                         <div class="publication-header">
-                            <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5518900" target="_blank" style="text-decoration: underline;">Tech Labor Rights for Human Rights</a></h4>
+                         <div class="publication-header" role="button" tabindex="0" aria-expanded="false">
+                            <h4><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5518900" target="_blank" rel="noopener noreferrer">Tech Labor Rights for Human Rights <span class="external-link-icon">↗</span></a></h4>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="publication-abstract">
@@ -84,7 +97,7 @@
                         </div>
                     </article>
                      <article class="publication">
-                         <div class="publication-header">
+                         <div class="publication-header" role="button" tabindex="0" aria-expanded="false">
                             <h4>Performance-Based AI Governance: Concept, Critiques, and Alternatives</h4>
                             <span class="toggle-icon">+</span>
                         </div>
@@ -94,13 +107,126 @@
                         </div>
                     </article>
                     <article class="publication">
-                        <div class="publication-header">
-                            <h4>Interdependencia | Interdependence</h4>
+                        <div class="publication-header" role="button" tabindex="0" aria-expanded="false">
+                            <h4><a href="https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf" target="_blank" rel="noopener noreferrer">Interdependencia | Interdependence <span class="external-link-icon">↗</span></a></h4>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="publication-abstract">
-                            <p class="citation">Andrea Dean, <em>Interdependencia | Interdependence</em>, in Natural Areas Explorer 2023, at 32–33 (City of Fort Collins 2023), <a href="https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf" target="_blank">https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf</a>.</p>
+                            <p class="citation">Andrea Dean, <em>Interdependencia | Interdependence</em>, in Natural Areas Explorer 2023, at 32–33 (City of Fort Collins 2023), <a href="https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf" target="_blank" rel="noopener noreferrer">https://www.fcgov.com/naturalareas/files/natural-areas-explorer-2023.pdf <span class="external-link-icon">↗</span></a>.</p>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="press" class="press section">
+            <div class="container">
+                <h2 class="section-title">On the Web</h2>
+                
+                <div class="web-links-grid">
+                    <!-- Featured Grouped Coverage -->
+                    <article class="press-accordion">
+                        <div class="press-accordion-header" role="button" tabindex="0" aria-expanded="false">
+                            <h4 class="press-title">Coverage of the "Comply to Fly?" Report on TSA facial recognition</h4>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="press-accordion-content">
+                            <article class="web-link-item">
+                                <span class="link-source">The Washington Post (2025)</span>
+                                <h4 class="link-title"><a href="https://www.washingtonpost.com/technology/2025/07/29/airport-facial-recognition-scan-opt-out/" target="_blank" rel="noopener noreferrer">Airport facial recognition scans are everywhere. Here’s how to opt out. <span class="external-link-icon">↗</span></a></h4>
+                                <p class="link-description">In-depth look at the <em>Comply to Fly?</em> report and TSA's facial recognition expansion.</p>
+                            </article>
+                            <article class="web-link-item">
+                                <span class="link-source">U.S. Senator Jeff Merkley (2025)</span>
+                                <h4 class="link-title"><a href="https://www.merkley.senate.gov/merkley-statement-on-his-bipartisan-bill-to-rein-in-tsa-facial-recognition-technology-at-airports-nationwide/" target="_blank" rel="noopener noreferrer">Statement on Bipartisan Bill to Rein in TSA Facial Recognition <span class="external-link-icon">↗</span></a></h4>
+                                <p class="link-description">Official legislative response citing the report's privacy findings.</p>
+                            </article>
+                            <article class="web-link-item">
+                                <span class="link-source">Yahoo / The 19th (2025)</span>
+                                <h4 class="link-title"><a href="https://creators.yahoo.com/lifestyle/story/is-tsas-facial-recognition-voluntary-or-just-made-to-feel-mandatory-131409837.html" target="_blank" rel="noopener noreferrer">Is TSA’s facial recognition voluntary, or just made to feel mandatory? <span class="external-link-icon">↗</span></a></h4>
+                                <p class="link-description">Analysis of traveler consent and transparency issues raised by the report.</p>
+                            </article>
+                            <article class="web-link-item">
+                                <span class="link-source">The Travel (2025)</span>
+                                <h4 class="link-title"><a href="https://www.thetravel.com/tsa-facial-recognition-data-privacy-risks-under-trump-administration/" target="_blank" rel="noopener noreferrer">TSA Facial Recognition: Potential Privacy Risks <span class="external-link-icon">↗</span></a></h4>
+                            </article>
+                        </div>
+                    </article>
+
+                    <!-- Chronological Items -->
+                    <!-- 2026 -->
+                    <article class="web-link-item">
+                        <span class="link-source">hackNY (2022–2026)</span>
+                        <h4 class="link-title"><a href="https://hackny.org/about" target="_blank" rel="noopener noreferrer">hackNY Board of Directors <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Member of the Board of Directors for hackNY.</p>
+                    </article>
+
+                    <article class="web-link-item">
+                        <span class="link-source">Lewis & Clark (2026)</span>
+                        <h4 class="link-title"><a href="https://www.lclark.edu/live/news/57744-tough-questions#dean" target="_blank" rel="noopener noreferrer">Featured in: Tough Questions: How do we effectively govern the use of AI? <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">How can we address some of today’s most vexing issues? Seven alumni experts share their best ideas.</p>
+                    </article>
+
+                    <!-- 2025 -->
+                    <article class="web-link-item">
+                        <span class="link-source">LinkedIn (2025)</span>
+                        <h4 class="link-title"><a href="https://www.linkedin.com/posts/join-us-during-tech-society-at-georgetown-ugcPost-7302439166536019968-w7vL/" target="_blank" rel="noopener noreferrer">Tech & Society at Georgetown <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">A talk I gave during Tech & Society Week at Georgetown University on technology, law, and ethics.</p>
+                    </article>
+
+                    <article class="web-link-item">
+                        <span class="link-source">Knight Georgetown Institute (2025)</span>
+                        <h4 class="link-title"><a href="https://kgi.georgetown.edu/people/andrea-dean/" target="_blank" rel="noopener noreferrer">People Profile: Andrea Dean <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Professional profile at the Knight Georgetown Institute.</p>
+                    </article>
+
+                    <article class="web-link-item">
+                        <span class="link-source">McCourt School of Public Policy (2025)</span>
+                        <h4 class="link-title"><a href="https://mccourt.georgetown.edu/news/profiles/andrea-dean/" target="_blank" rel="noopener noreferrer">Student Profile: Andrea Dean <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Spotlight on research and academic work at Georgetown McCourt.</p>
+                    </article>
+
+                    <article class="web-link-item">
+                        <span class="link-source">McCourt School News (2025)</span>
+                        <h4 class="link-title"><a href="https://mccourt.georgetown.edu/news/letters-from-tokyo-mccourt-students-reflect-on-trip-to-drive-novel-tech-policy-solutions/" target="_blank" rel="noopener noreferrer">Letters from Tokyo: Driving Tech Policy Solutions <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Reflections from McCourt Ideathon trip, which focused on quantum computing.</p>
+                    </article>
+
+                    <!-- 2024 -->
+                    <article class="web-link-item">
+                        <span class="link-source">PR Newswire (2024)</span>
+                        <h4 class="link-title"><a href="https://www.prnewswire.com/news-releases/kapor-foundation-announces-new-fellows-focused-on-tech-equity-across-education-and-workforce-302279228.html" target="_blank" rel="noopener noreferrer">Kapor Foundation Fellowship Announcement <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Official announcement of the 2024-2025 Tech Equity Fellowship cohort.</p>
+                    </article>
+
+                    <!-- 2023 -->
+                    <!-- Empty for now as items moved to 2025 -->
+
+                    <!-- 2019 -->
+                    <article class="web-link-item">
+                        <span class="link-source">National Security Institute (2019)</span>
+                        <h4 class="link-title"><a href="https://nationalsecurity.gmu.edu/andrea-dean/" target="_blank" rel="noopener noreferrer">GMU NSI Visiting Fellow Profile <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Part of inaugural fellowship for technologists to learn about policy.</p>
+                    </article>
+
+                    <article class="web-link-item">
+                        <span class="link-source">Medium (2019)</span>
+                        <h4 class="link-title"><a href="https://medium.com/@a.rosie.dean/my-hackny-application-b44b173ab5d4" target="_blank" rel="noopener noreferrer">My hackNY Application <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Sharing application to hackNY fellowship to help potential applicants.</p>
+                    </article>
+
+                    <!-- 2018 -->
+                    <article class="web-link-item">
+                        <span class="link-source">Lewis & Clark News (2018)</span>
+                        <h4 class="link-title"><a href="https://www.lclark.edu/live/news/38955-on-the-go-with-amazon" target="_blank" rel="noopener noreferrer">On the Go with Amazon Go <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Profile on working as an engineer on the Amazon Go team.</p>
+                    </article>
+
+                    <!-- 2016-2017 -->
+                    <article class="web-link-item">
+                        <span class="link-source">Lewis & Clark Board (2016-2017)</span>
+                        <h4 class="link-title"><a href="https://college.lclark.edu/offices/alumni/board/members/dean.php" target="_blank" rel="noopener noreferrer">Alumni Board of Directors <span class="external-link-icon">↗</span></a></h4>
+                        <p class="link-description">Member of board of alumni as president of the student alumni association.</p>
                     </article>
                 </div>
             </div>
@@ -109,8 +235,11 @@
         <section id="contact" class="contact section">
             <div class="container">
                 <h2 class="section-title">Get in Touch</h2>
-                <p class="contact-intro">For speaking engagements, consulting inquiries, or to discuss my research, please reach out.</p>
-                <a href="mailto:contact@andreaism.com" class="btn">Email Me</a>
+                <p class="contact-intro">For inquiries or to discuss my research, please reach out.</p>
+                <div class="contact-methods">
+                    <a href="mailto:contact@andreaism.com" class="btn">Email Me</a>
+                    <p class="contact-email">contact@andreaism.com</p>
+                </div>
             </div>
         </section>
     </main>
@@ -118,8 +247,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-links">
-                 <a href="https://linkedin.com/in/andrearosedean" target="_blank">LinkedIn</a>
-                 <a href="https://github.com/andreadean" target="_blank">GitHub</a>
+                 <a href="https://linkedin.com/in/andrearosedean" target="_blank" rel="noopener noreferrer">LinkedIn <span class="external-link-icon">↗</span></a>
+                 <a href="https://github.com/andreadean" target="_blank" rel="noopener noreferrer">GitHub <span class="external-link-icon">↗</span></a>
             </div>
             <p>&copy; 2025 Andrea Dean. All rights reserved.</p>
         </div>
